@@ -215,10 +215,12 @@ a {
           flex-direction: column;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .nav-mob .container .links-menu li {
   padding: 30px 0;
+  text-transform: uppercase;
 }
 
 .nav-mob .container .links-menu.active {
@@ -238,6 +240,11 @@ a {
   text-transform: uppercase;
 }
 
+.filter .breadcrumbb a {
+  font-size: 32px;
+  color: #1e90ff;
+}
+
 .filter .sec-filter {
   margin-bottom: 60px;
 }
@@ -249,7 +256,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .filter .sec-filter .filt-head i {
@@ -259,6 +266,11 @@ a {
 
 .filter .sec-filter .filt-head span {
   font-size: 28px;
+}
+
+.filter .sec-filter .input-group {
+  margin-bottom: 50px;
+  z-index: 0;
 }
 
 .filter .sec-filter h2 {
@@ -334,11 +346,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .filter .box-job .job-content .header h3 {
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .filter .box-job .job-content .header h3 a {
@@ -492,6 +505,12 @@ a {
   font-size: 12px;
 }
 
+@media (max-width: 767px) {
+  .footer .sub-footer {
+    text-align: center;
+  }
+}
+
 .footer .sub-footer .t-p-c {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,5 +521,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer .sub-footer .t-p-c {
+    margin-top: 19px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
