@@ -199,6 +199,11 @@ a {
             margin-bottom: 22px;
             .form-select {
                 border-radius: 0;
+                @media (max-width: 767px) {
+                    &:not(last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
             }
         }
         ul {

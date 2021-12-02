@@ -286,6 +286,12 @@ a {
   border-radius: 0;
 }
 
+@media (max-width: 767px) {
+  .filter .sec-filter .selec-dates .form-select:not(last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 .filter .sec-filter ul {
   margin-bottom: 22px;
 }
