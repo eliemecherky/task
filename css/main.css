@@ -278,6 +278,14 @@ a {
   margin-bottom: 25px;
 }
 
+.filter .sec-filter .selec-dates {
+  margin-bottom: 22px;
+}
+
+.filter .sec-filter .selec-dates .form-select {
+  border-radius: 0;
+}
+
 .filter .sec-filter ul {
   margin-bottom: 22px;
 }

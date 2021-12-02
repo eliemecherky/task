@@ -21,8 +21,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Jquery UI -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" integrity="sha512-okE4owXD0kfXzgVXBzCDIiSSlpXn3tJbNodngsTnIYPJWjuYhtJ+qMoc0+WUwLHeOwns0wm57Ka903FqQKM1sA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" integrity="sha512-okE4owXD0kfXzgVXBzCDIiSSlpXn3tJbNodngsTnIYPJWjuYhtJ+qMoc0+WUwLHeOwns0wm57Ka903FqQKM1sA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
     <!-- Main css -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -118,14 +119,27 @@
                             <li><input type="checkbox" name="category[]" id=""><span>Distance education and training</span></li>
                         </ul>
 
-                        <h2>Delivery term</h2>
-                        <ul>
-                            <li><input type="checkbox" name="delivery[]" id=""><span>less than one week</span></li>
-                            <li><input type="checkbox" name="delivery[]" id=""><span>1 to 2 weeks</span></li>
-                            <li><input type="checkbox" name="delivery[]" id=""><span>From 2 weeks to a month</span></li>
-                            <li><input type="checkbox" name="delivery[]" id=""><span>1 to 3 months</span></li>
-                            <li><input type="checkbox" name="delivery[]" id=""><span>More than 3 months</span></li>
-                        </ul>
+                        <h2>Date Posted</h2>
+                        <div class="selec-dates">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <SELECT id="year" class="form-select" name="yyyy" onchange="change_year(this)">
+                                    </SELECT>
+                                </div>
+                                <div class="col-md-4">
+                                    <SELECT id="month" class="form-select" name="mm" onchange="change_month(this)">
+                                    </SELECT>
+                                </div>
+                                <div class="col-md-4">
+                                    <SELECT id="day" class="form-select" name="dd">
+                                    </SELECT>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
 
                         <h2>Budget</h2>
                         <p>

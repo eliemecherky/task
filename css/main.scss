@@ -195,6 +195,12 @@ a {
             font-size: 32px;
             margin-bottom: 25px;
         }
+        .selec-dates {
+            margin-bottom: 22px;
+            .form-select {
+                border-radius: 0;
+            }
+        }
         ul {
             margin-bottom: 22px;
             li {
